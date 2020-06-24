@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+import React, { Component } from "react";
+import Data from "./data.json";
+import ProductList from "./components/ProductList";
+export default class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <h1>Welcome to our online store</h1>
+        <ProductList data={Data} />
+      </React.Fragment>
+    );
+  }
 }
-
-export default App;
