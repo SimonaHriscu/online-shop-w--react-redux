@@ -1,17 +1,35 @@
 import React from "react";
 
-const ProductItem = (props) => {
-  const { id, productName, icon, price, inventory } = props.info;
+export default class ProductItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      productArray: [],
+    };
+  }
 
-  return (
-    <li key={id}>
-      {productName} <i>{icon}</i>
-      <h5>{price}</h5>
-      <button disabled={inventory === 0}>
-        {inventory > 0 ? "Add to cart" : "Sold out"}
-      </button>
-    </li>
-  );
-};
+  render() {
+    const { id, productName, icon, price, inventory } = this.props.info;
 
-export default ProductItem;
+    const handleClick = (e) => {
+      e.preventDefault();
+
+      this.setState({
+        productArray: price,
+      });
+      console.log(this.state.productArray);
+    };
+
+    return (
+      <React.Fragment>
+        <li key={id}>
+          {productName} <i>{icon}</i>
+          <h5>{price}</h5>
+          <button onClick={handleClick} disabled={inventory === 0}>
+            {inventory > 0 ? "Add to cart" : "Sold out"}
+          </button>
+        </li>
+      </React.Fragment>
+    );
+  }
+}
