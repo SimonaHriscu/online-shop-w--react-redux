@@ -1,28 +1,60 @@
-import React from 'react';
+import React from "react";
 
-const Header =()=>{
-    return(
-    <nav>
-    <div class="logo">
-      <p>Swhish</p>
-    </div>
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
 
-    <div class="filters-box">
-      <div class="title">Filters</div>
-      <div class="filters">
-        <div class="filter1">#0-10 $</div>
-        <div class="filter2">#over 10 $</div>
-        <div class="filter3">Glutenfree</div>
-      </div>
-    </div>
+    //console.log(this.props.data[1].price);
+    const newArr = [];
+    this.props.data.forEach((item) => {
+      newArr.push(item.price);
+    });
+   console.log(newArr);
+  
+    this.submitFilter = (e) => {
+      e.preventDefault();
+      const newArr = [];
+    this.props.data.forEach((item) => {
+      newArr.push(item.price);
+    });
+   console.log(newArr);
+  
+      const newArray = newArr.filter((item) => item >= 10);
+      console.log(newArray);
+   const sortArr = newArray.forEach(item =>
+        console.log(item.id))
+      this.setState({
+        filteredData1: sortArr ,
+      })
+   }
+  }
+  
+  render() {
+    return (
+      <nav>
+        <div className="logo">
+          <p>Swish</p>
+        </div>
 
-    <div class="cart">
-      <i class="fas fa-concierge-bell"></i>
-      <div class="order-status">ORDER STATUS</div>
-      <div class="items-no">0</div>
-    </div>
-  </nav>
-    )
+        <div className="filters-box">
+          <div className="title">Filters</div>
+          <div className="filters">
+            <div className="title">#0-10 $</div>
+            <button type="submit" name="name" onClick={this.submitFilter}>
+              {" "}
+              #over 10 $
+            </button>
+            <div className="filter3">Glutenfree</div>
+          </div>
+        </div>
+
+        <div className="cart">
+          <i className="fas fa-concierge-bell"></i>
+          <div className="order-status">ORDER STATUS</div>
+          <div className="items-no">0</div>
+        </div>
+      </nav>
+    );
+  }
 }
-
-export default Header;

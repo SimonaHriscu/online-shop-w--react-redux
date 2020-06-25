@@ -9,7 +9,8 @@ export default class App extends Component {
     this.state = {
       userInput: "",
       data: Data,
-      filteredData: [],
+      searchData: [],
+      filteredData1:[],
     };
   }
   changeHandle = (e) => {
@@ -26,15 +27,17 @@ export default class App extends Component {
       (item) => item.productName === userText
     );
     this.setState({
-      filteredData: newArr,
+      searchData: newArr,
     });
   };
-
+  
 
   render() {
+    
     return (
+      
       <React.Fragment>
-        <Header/>
+        <Header data={Data}/>
         <div className='container'>
         <h1>Welcome to our online store</h1>
         <form onSubmit={this.submitHandle}>
@@ -47,8 +50,8 @@ export default class App extends Component {
         </form>
         <ProductList
           data={
-            this.state.userInput ? this.state.filteredData : this.state.data
-          }
+            this.state.userInput ? this.state.searchData : this.state.data}
+       
         />
         </div>
       </React.Fragment>
