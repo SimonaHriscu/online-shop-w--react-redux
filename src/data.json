@@ -33,5 +33,33 @@
       "icon": "🍦",
       "price": 7,
       "inventory": 66
+    },
+    {
+      "id": 5,
+      "productName": "soup",
+      "icon": "🍲",
+      "price": 25,
+      "inventory": 5
+    },
+    {
+      "id": 6,
+      "productName": "hot-dog",
+      "icon": "🌭",
+      "price": 15,
+      "inventory": 3
+    },
+    {
+      "id": 7,
+      "productName": "burrito",
+      "icon": "🌯",
+      "price": 12,
+      "inventory": 7
+    },
+    {
+      "id": 8,
+      "productName": "taco",
+      "icon": "🌮",
+      "price": 16,
+      "inventory": 3
     }
   ]

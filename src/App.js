@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Data from "./data.json";
+import Header from './components/header/Header'
 import ProductList from "./components/ProductList";
 
 export default class App extends Component {
@@ -33,6 +34,8 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <Header/>
+        <div className='container'>
         <h1>Welcome to our online store</h1>
         <form onSubmit={this.submitHandle}>
           <input
@@ -40,13 +43,14 @@ export default class App extends Component {
             onChange={this.changeHandle}
             value={this.state.userInput}
           />
-          <input type="submit" value="filter" />
+          <input type="submit" value="Search" />
         </form>
         <ProductList
           data={
             this.state.userInput ? this.state.filteredData : this.state.data
           }
         />
+        </div>
       </React.Fragment>
     );
   }

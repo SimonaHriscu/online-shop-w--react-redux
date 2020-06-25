@@ -23,8 +23,8 @@ export default class ProductItem extends React.Component {
     return (
       <React.Fragment>
         <li key={id}>
-          {productName} <i>{icon}</i>
-          <h5>{price}</h5>
+          <p>{productName} <i>{icon}</i></p>
+          <h5>{price}<span> $</span></h5>
           <button onClick={handleClick} disabled={inventory === 0}>
             {inventory > 0 ? "Add to cart" : "Sold out"}
           </button>
