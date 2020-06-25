@@ -24,7 +24,11 @@ export default class App extends Component {
     e.preventDefault();
     const userText = this.state.userInput.toLocaleLowerCase();
     let newArr = this.state.data.filter(
-      (item) => item.productName === userText
+      (item) => {
+        if(item.productName.toLocaleLowerCase().includes(userText)){
+          return item
+        }
+      }
     );
     this.setState({
       searchData: newArr,
@@ -40,7 +44,7 @@ export default class App extends Component {
         <Header data={Data}/>
         <div className='container'>
         <h1>Welcome to our online store</h1>
-        <form onSubmit={this.submitHandle}>
+        <form onKeyUp={this.submitHandle}>
           <input
             type="text"
             onChange={this.changeHandle}
