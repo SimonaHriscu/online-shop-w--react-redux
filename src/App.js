@@ -1,7 +1,13 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Data from "./data.json";
 import Header from "./components/header/Header";
 import ProductList from "./components/ProductList";
+import About from "./components/About";
+import Menu from "./components/Menu";
+import Home from "./components/Home";
+import Soon from "./components/Soon";
+
 
 export default class App extends Component {
   constructor(props) {
@@ -15,20 +21,19 @@ export default class App extends Component {
 
     
   }
-  submitFilter = (e) => {
-    e.preventDefault();
-    const newArr = [];
-    this.props.data.forEach((item) => {
-      if (item.price >= 20) {
-        newArr.push(item);
-        console.log(newArr);
-      }
-    });
+  // submitFilter = (e) => {
+  //   e.preventDefault();
+  //   const newArr = [];
+  //   this.props.data.forEach((item) => {
+  //     if (item.price >= 20) {
+  //       newArr.push(item);
+  //       console.log(newArr);
+  //     }
+  //   });
   //   this.setState({
   //   filteredData1: newArr ,
   // })
-};
-
+//}
 
   changeHandle = (e) => {
     // console.log(e.target.value.trim())
@@ -74,6 +79,8 @@ export default class App extends Component {
             }
           />
         </div>
+
+        
       </React.Fragment>
     );
   }
