@@ -61,5 +61,26 @@
       "icon": "🌮",
       "price": 16,
       "inventory": 3
+    },
+    {
+      "id": 9,
+      "productName": "water",
+      "icon": "🍶",
+      "price": 4,
+      "inventory": 40
+    },
+    {
+      "id": 10,
+      "productName": "wine",
+      "icon": "🍷",
+      "price": 8,
+      "inventory": 2
+    },
+    {
+      "id": 11,
+      "productName": "sushi",
+      "icon": "🍣",
+      "price": 32,
+      "inventory": 6
     }
   ]
