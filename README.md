@@ -1,4 +1,4 @@
-# Online shopping with React
+# Online shopping with Redux
 
 ## Preview:
 
