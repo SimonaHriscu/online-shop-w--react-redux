@@ -1,17 +1,6 @@
 import React from "react";
 
 const Header = ({submitFilter}) => {
-  //console.log(this.props.data[1].price);
-
- 
-  // console.log(newArr);
-
-
-  // this.setState({
-  //   filteredData1: newArr ,
-  // })
-  // console.log(this.state);
-
   return (
     <nav>
       <div className="logo">

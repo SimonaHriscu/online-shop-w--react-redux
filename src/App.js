@@ -3,11 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Data from "./data.json";
 import Header from "./components/header/Header";
 import ProductList from "./components/ProductList";
-import About from "./components/About";
-import Menu from "./components/Menu";
-import Home from "./components/Home";
-import Soon from "./components/Soon";
-
 
 export default class App extends Component {
   constructor(props) {
@@ -18,8 +13,6 @@ export default class App extends Component {
       searchData: [],
       filteredData1: [],
     };
-
-    
   }
   // submitFilter = (e) => {
   //   e.preventDefault();
@@ -33,7 +26,7 @@ export default class App extends Component {
   //   this.setState({
   //   filteredData1: newArr ,
   // })
-//}
+  //}
 
   changeHandle = (e) => {
     // console.log(e.target.value.trim())
@@ -58,11 +51,12 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header data={Data}
-         submitFilter={e => this.setState(
-           {filteredData1:this.submitFilter ,}
-         )}
-         />
+        <Header
+          data={Data}
+          submitFilter={(e) =>
+            this.setState({ filteredData1: this.submitFilter })
+          }
+        />
         <div className="container">
           <h1>Welcome to our online store</h1>
           <form onKeyUp={this.submitHandle}>
@@ -79,8 +73,6 @@ export default class App extends Component {
             }
           />
         </div>
-
-        
       </React.Fragment>
     );
   }
