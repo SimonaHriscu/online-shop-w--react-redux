@@ -25,8 +25,13 @@ Project
       |        └─── icons
       |        └─── ProductItem.jsx
       │        └─── ProductList.jsx
-      |        └─── 
       └─── scss
+      │        └─── main.scss
+      │        └─── _mixins.scss
+      └─── actions
+      │        └─── index.js
+      └─── reducers
+      │        └─── index.js
       └─── data.json
   
                
