@@ -24,7 +24,7 @@ Project
       │        └─── header
       |        └─── icons
       |        └─── ProductItem.jsx
-      │        └─── ProductLIst.jsx
+      │        └─── ProductList.jsx
       |        └─── 
       └─── scss
       └─── data.json
