@@ -1,16 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import 'react-bootstrap';
 import "./scss/main.scss";
-//import "fontawesome";
-import "./components/icons/lib";
-
 import App from "./App.js";
+//  step 3.
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import allReducers from "./reducers";
+// products data
+import products from "./data.json";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+const store = createStore(
+  allReducers,
+  {
+    products: products,
+    cart: {},
+  },
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);

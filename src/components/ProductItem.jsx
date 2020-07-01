@@ -1,35 +1,41 @@
 import React from "react";
+import { connect } from "react-redux";
+import { addProduct } from "../actions";
 
-export default class ProductItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      productArray: [],
-    };
-  }
-
+class ProductItem extends React.Component {
   render() {
-    const { id, productName, icon, price, inventory } = this.props.info;
-
-    const handleClick = (e) => {
-      e.preventDefault();
-
-      this.setState({
-        productArray: price,
-      });
-      console.log(this.state.productArray);
-    };
-
+    const { info, addProduct } = this.props;
+    console.log(this.props);
     return (
-      <React.Fragment>
-        <li key={id}>
-          <p>{productName} <i>{icon}</i></p>
-          <h5>{price}<span> $</span></h5>
-          <button onClick={handleClick} disabled={inventory === 0}>
-            {inventory > 0 ? "Add to cart" : "Sold out"}
+      <li>
+        <span>
+          <div className="product-title">
+           <p> {info.productName}</p> <i>{info.icon}</i>
+           </div>
+          <div className="product-price">{info.price}€</div>
+          <div className="product-inventory">
+            {info.inventory > 0
+              ? `x ${info.inventory} items left`
+              : "sorry no more items"}
+          </div>
+        </span>
+
+        
+          <button className="product-add"
+            onClick={() => addProduct(info)}
+            disabled={info.inventory === 0}
+          >
+            {info.inventory > 0 ? "Add to cart" : "Sold out"}
           </button>
-        </li>
-      </React.Fragment>
+       
+
+      </li>
     );
   }
 }
+
+const mapStoreToProps = (store) => {};
+const mapActionsToProps = {
+  addProduct,
+};
+export default connect(mapStoreToProps(), mapActionsToProps)(ProductItem);
