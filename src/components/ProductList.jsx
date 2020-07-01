@@ -5,11 +5,12 @@ import { connect } from "react-redux";
 class ProductList extends React.Component {
   render() {
     const { items } = this.props;
+  
 
-    const allItems = items.map((item) => {
-      return <ProductItem key={item.id} info={item} />;
+    const allItems = items.map((item, i) => {
+      return <ProductItem key={i} info={item} />;
     });
-
+  
     return (
       <React.Fragment>
         <ul>{allItems}</ul>

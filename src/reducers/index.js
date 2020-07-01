@@ -1,12 +1,14 @@
 // step 2.
 const allReducers = (state = {}, action) => {
     const { cart, products } = state;
+    // console.log(state);
     const { product } = action;
     const { id, productName, price } = product || {};
     let quantity, inventory;
     switch (action.type) {
       case "ADD_PRODUCT":
         quantity = cart[id] ? cart[id].quantity : 0;
+        
         inventory =
           product.inventory > 0 ? product.inventory - 1 : product.inventory;
         return {

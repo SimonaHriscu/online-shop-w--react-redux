@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import allReducers from "./reducers";
 // products data
 import products from "./data.json";
-
+//console.log(allReducers)
 const store = createStore(
   allReducers,
   {

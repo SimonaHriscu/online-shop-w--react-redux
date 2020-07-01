@@ -5,7 +5,7 @@ import { addProduct } from "../actions";
 class ProductItem extends React.Component {
   render() {
     const { info, addProduct } = this.props;
-    console.log(this.props);
+   // console.log(this.props);
     return (
       <li>
         <span>
@@ -16,7 +16,7 @@ class ProductItem extends React.Component {
           <div className="product-inventory">
             {info.inventory > 0
               ? `x ${info.inventory} items left`
-              : "sorry no more items"}
+              : <div className="out-of-stock">Out of stock</div>}
           </div>
         </span>
 

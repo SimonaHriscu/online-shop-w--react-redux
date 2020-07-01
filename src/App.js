@@ -9,7 +9,7 @@ export default class App extends Component {
         <Header
         />
         <div className="container">
-          <h1>Welcome to our online store</h1>
+          <h1>All Products</h1>
           <ProductList/>
         </div>
       </React.Fragment>

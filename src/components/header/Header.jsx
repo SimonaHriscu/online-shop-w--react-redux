@@ -10,11 +10,8 @@ const Header = ({submitFilter}) => {
       <div className="filters-box">
         <div className="title">Filters</div>
         <div className="filters">
-          <div className="title">#0-10 $</div>
-          <button type="submit" name="name" onClick={submitFilter}>
-            {" "}
-            #over 10 $
-          </button>
+          <div className="filter1">#0-10 $</div>
+          <div className="filter2">#over 10 $</div>
           <div className="filter3">Glutenfree</div>
         </div>
       </div>
