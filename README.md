@@ -1,6 +1,36 @@
 # Online shopping with React
 
+## Preview:
 
+## Structure
+
+```
+Project
+│   README.md
+│   package.json
+|   package-lock.json
+|
+└─── public
+│      │
+│      └─── index.html
+|      └─── images
+|
+|
+└─── src
+      └─── index.js
+      └─── App.js
+      │
+      └─── components
+      │        └─── header
+      |        └─── icons
+      |        └─── ProductItem.jsx
+      │        └─── ProductLIst.jsx
+      |        └─── 
+      └─── scss
+      └─── data.json
+  
+               
+``` 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
