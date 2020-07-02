@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/online-shop-w--redux/static/css/main.a7c2fba3.chunk.css",
-    "main.js": "/online-shop-w--redux/static/js/main.a86698aa.chunk.js",
-    "main.js.map": "/online-shop-w--redux/static/js/main.a86698aa.chunk.js.map",
+    "main.js": "/online-shop-w--redux/static/js/main.0b69ed8f.chunk.js",
+    "main.js.map": "/online-shop-w--redux/static/js/main.0b69ed8f.chunk.js.map",
     "runtime-main.js": "/online-shop-w--redux/static/js/runtime-main.8064106a.js",
     "runtime-main.js.map": "/online-shop-w--redux/static/js/runtime-main.8064106a.js.map",
     "static/js/2.8db8cce5.chunk.js": "/online-shop-w--redux/static/js/2.8db8cce5.chunk.js",
     "static/js/2.8db8cce5.chunk.js.map": "/online-shop-w--redux/static/js/2.8db8cce5.chunk.js.map",
     "index.html": "/online-shop-w--redux/index.html",
-    "precache-manifest.5d2b6684a8890221261e2007d1765890.js": "/online-shop-w--redux/precache-manifest.5d2b6684a8890221261e2007d1765890.js",
+    "precache-manifest.d41c05899bedc4ac4be52341f6e91f6a.js": "/online-shop-w--redux/precache-manifest.d41c05899bedc4ac4be52341f6e91f6a.js",
     "service-worker.js": "/online-shop-w--redux/service-worker.js",
     "static/css/main.a7c2fba3.chunk.css.map": "/online-shop-w--redux/static/css/main.a7c2fba3.chunk.css.map",
     "static/js/2.8db8cce5.chunk.js.LICENSE.txt": "/online-shop-w--redux/static/js/2.8db8cce5.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8064106a.js",
     "static/js/2.8db8cce5.chunk.js",
     "static/css/main.a7c2fba3.chunk.css",
-    "static/js/main.a86698aa.chunk.js"
+    "static/js/main.0b69ed8f.chunk.js"
   ]
 }
