@@ -1,11 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addProduct } from "../actions";
+import { addProduct, removeOne } from "../actions";
 
 class ProductItem extends React.Component {
   render() {
-    const { info, addProduct } = this.props;
-   //console.log(addProduct);
+   // console.log(this.props);
+    const { info, addProduct, removeOne } = this.props;
     return (
       <li>
         <span>
@@ -27,6 +27,12 @@ class ProductItem extends React.Component {
           >
             {info.inventory > 0 ? "Add to cart" : "Sold out"}
           </button>
+          <button className="product-add"
+            onClick={() => removeOne(info)}
+            disabled={info.inventory === 0}
+          >
+            {info.inventory > 0 ? "Delete an Item" : "Cart is empty"}
+          </button>
        
 
       </li>
@@ -37,5 +43,6 @@ class ProductItem extends React.Component {
 const mapStoreToProps = (store) => {};
 const mapActionsToProps = {
   addProduct,
+  removeOne,
 };
 export default connect(mapStoreToProps(), mapActionsToProps)(ProductItem);
