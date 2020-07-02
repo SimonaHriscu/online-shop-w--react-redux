@@ -12,6 +12,9 @@ const allReducers = (state = {}, action) => {
         
         inventory =
           product.inventory > 0 ? product.inventory - 1 : product.inventory;
+          newCart = 
+            product
+          ;
         return {
           ...state,
           products: {

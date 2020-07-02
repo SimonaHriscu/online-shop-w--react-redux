@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 
 class ProductList extends React.Component {
   render() {
+   // console.log(this.props)
     const { items } = this.props;
   
 

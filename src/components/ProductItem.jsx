@@ -5,7 +5,7 @@ import { addProduct } from "../actions";
 class ProductItem extends React.Component {
   render() {
     const { info, addProduct } = this.props;
-   // console.log(this.props);
+   //console.log(addProduct);
     return (
       <li>
         <span>

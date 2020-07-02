@@ -1,6 +1,23 @@
 import React from "react";
+import {connect} from 'react-redux';
 
-const Header = ({submitFilter}) => {
+class Header extends React.Component {
+  render() {
+    //console.log(this.props);
+   const {store} = this.props;
+   // console.log(store);
+    const {cart} = store;
+    //console.log(cart);
+    const values = Object.values(cart)
+    // console.log(values);
+   
+    const cartNum = values.map(element => (
+     element.quantity
+   ));
+  let total = cartNum.reduce((a,b) => a+b,0);
+  
+  
+  
   return (
     <nav>
       <div className="logo">
@@ -19,10 +36,15 @@ const Header = ({submitFilter}) => {
       <div className="cart">
         <i className="fas fa-concierge-bell"></i>
         <div className="order-status">ORDER STATUS</div>
-        <div className="items-no">0</div>
+        <div className="items-no">{total}</div>
       </div>
     </nav>
   );
 };
-
-export default Header
+}
+const mapStateToProps = (store)=>{
+  return{
+    store,
+  }
+}
+export default connect(mapStateToProps)(Header);
