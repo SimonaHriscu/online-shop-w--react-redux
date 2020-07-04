@@ -46,7 +46,7 @@
       "productName": "hot-dog",
       "icon": "🌭",
       "price": 15,
-      "inventory": 3
+      "inventory": 4
     },
     {
       "id": 7,
@@ -60,7 +60,7 @@
       "productName": "taco",
       "icon": "🌮",
       "price": 16,
-      "inventory": 3
+      "inventory": 6
     },
     {
       "id": 9,

@@ -94,6 +94,9 @@ body {
           .product-inventory {
             text-align: center;
             font-size: 0.8vw;
+            .normal{
+              color: inherit;
+            }
            .out-of-stock{
              color:red;
            }
