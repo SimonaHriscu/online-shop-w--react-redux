@@ -1,11 +1,12 @@
 import React from "react";
 import {connect} from 'react-redux';
+import { addProduct } from "../../actions";
 
 class Header extends React.Component {
   render() {
     //console.log(this.props);
    const {store} = this.props;
-   // console.log(store);
+   console.log(store);
     const {cart} = store;
     //console.log(cart);
     const values = Object.values(cart)
@@ -14,8 +15,8 @@ class Header extends React.Component {
     const cartNum = values.map(element => (
      element.quantity
    ));
-  let total = cartNum.reduce((a,b) => a+b,0);
-  
+  let totalSum = cartNum.reduce((a,b) => a+b,0);
+  //let diff = cartNum - totalSum;
   
   
   return (
@@ -36,7 +37,10 @@ class Header extends React.Component {
       <div className="cart">
         <i className="fas fa-concierge-bell"></i>
         <div className="order-status">ORDER STATUS</div>
-        <div className="items-no">{total}</div>
+        <div className="items-no">
+          {/* {addProduct ? <p>{totalSum}</p>: <p>{diff}</p> } */}
+          {totalSum}
+          </div>
       </div>
     </nav>
   );
