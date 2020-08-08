@@ -5,17 +5,17 @@
     "main.js.map": "/online-shop-w--redux/static/js/main.77a61217.chunk.js.map",
     "runtime-main.js": "/online-shop-w--redux/static/js/runtime-main.8064106a.js",
     "runtime-main.js.map": "/online-shop-w--redux/static/js/runtime-main.8064106a.js.map",
-    "static/js/2.8db8cce5.chunk.js": "/online-shop-w--redux/static/js/2.8db8cce5.chunk.js",
-    "static/js/2.8db8cce5.chunk.js.map": "/online-shop-w--redux/static/js/2.8db8cce5.chunk.js.map",
+    "static/js/2.6e6623d0.chunk.js": "/online-shop-w--redux/static/js/2.6e6623d0.chunk.js",
+    "static/js/2.6e6623d0.chunk.js.map": "/online-shop-w--redux/static/js/2.6e6623d0.chunk.js.map",
     "index.html": "/online-shop-w--redux/index.html",
-    "precache-manifest.b84d3caa48cd60a23f721cabe2bdad4b.js": "/online-shop-w--redux/precache-manifest.b84d3caa48cd60a23f721cabe2bdad4b.js",
+    "precache-manifest.7d00c27f9d130bc8498266dad33e6628.js": "/online-shop-w--redux/precache-manifest.7d00c27f9d130bc8498266dad33e6628.js",
     "service-worker.js": "/online-shop-w--redux/service-worker.js",
     "static/css/main.678c393f.chunk.css.map": "/online-shop-w--redux/static/css/main.678c393f.chunk.css.map",
-    "static/js/2.8db8cce5.chunk.js.LICENSE.txt": "/online-shop-w--redux/static/js/2.8db8cce5.chunk.js.LICENSE.txt"
+    "static/js/2.6e6623d0.chunk.js.LICENSE.txt": "/online-shop-w--redux/static/js/2.6e6623d0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8064106a.js",
-    "static/js/2.8db8cce5.chunk.js",
+    "static/js/2.6e6623d0.chunk.js",
     "static/css/main.678c393f.chunk.css",
     "static/js/main.77a61217.chunk.js"
   ]
