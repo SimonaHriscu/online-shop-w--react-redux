@@ -2,6 +2,16 @@
 
 ## Preview:
 
+![Imgur](https://imgur.com/u2Jnba4.png)
+
+## Development tools and frameworks used:
+<h1>
+<img src="https://imgur.com/T1TApg1.png" alt="HTML, CSS, JS" width="20%">
+<img src="https://imgur.com/fZuu2v0.png" alt="React" width="10%">
+<img src="https://imgur.com/qWeDz1v.png" alt="Redux" width="9%">
+<img src="https://imgur.com/plyrZV7.png" alt="Sass" width="10%">
+<img src="https://imgur.com/lXP1Rph.png" alt="JSON" width="10%">
+</h1>
 ## Structure
 
 ```
